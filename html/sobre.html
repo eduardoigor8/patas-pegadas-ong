@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre | Patas & Pegadas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">🐾</div>
+          <span>Patas &amp; Pegadas</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-menu" id="primary-navigation" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <details class="nav-dropdown">
+            <summary>Conheça</summary>
+            <div class="dropdown-menu">
+              <a href="sobre.html">Sobre</a>
+              <a href="animais.html">Animais</a>
+              <a href="resgate.html">Resgate</a>
+            </div>
+          </details>
+          <a href="adocao.html">Adoção</a>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="resgate.html">Doar</a>
+            <a class="btn btn-primary" href="adocao.html">Quero ajudar</a>
+            <div class="appearance-controls" role="group" aria-label="Aparência">
+              <label class="appearance-control">
+                <span>Tema</span>
+                <select id="theme-choice">
+                  <option value="system">Sistema</option>
+                  <option value="light">Claro</option>
+                  <option value="dark">Escuro</option>
+                </select>
+              </label>
+              <label class="appearance-control">
+                <span>Contraste</span>
+                <select id="contrast-choice">
+                  <option value="system">Sistema</option>
+                  <option value="normal">Padrão</option>
+                  <option value="high">Alto</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container grid-2">
+          <div class="hero-copy">
+            <span class="eyebrow">Quem somos</span>
+            <h1>Transformamos cuidado em <span class="headline-accent">ação real.</span></h1>
+            <p class="lead">
+              Somos uma organização de proteção animal que atua no resgate, acolhimento e adoção responsável.
+              Acreditamos que cada animal merece dignidade, saúde e um lar seguro, e que isso só é possível quando a comunidade se mobiliza.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="adocao.html">Adotar agora</a>
+              <a class="btn btn-secondary" href="resgate.html">Entender o resgate</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="../images/imagem-03.jpg" alt="Cachorro em acolhimento" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <div class="container">
+          <div class="section-tag">Nossa missão</div>
+          <h2>Resgatamos, acolhemos e conectamos.</h2>
+          <div class="mission-grid" style="margin-top: 28px;">
+            <article class="mission-card">
+              <div class="mission-icon">🐶</div>
+              <h3>Resgate urbano</h3>
+              <p>Atendemos bichos em situação de risco em ruas, becos e áreas vulneráveis, levando atenção médica e cuidado imediato.</p>
+            </article>
+            <article class="mission-card">
+              <div class="mission-icon">🏡</div>
+              <h3>Acolhimento</h3>
+              <p>Garantimos lares temporários, alimentação, higiene e acompanhamento de veterinários e voluntários.</p>
+            </article>
+            <article class="mission-card">
+              <div class="mission-icon">💜</div>
+              <h3>Conexão humana</h3>
+              <p>Criamos pontes entre comunidade, tutores, veterinários e adotantes para construir uma rede de cuidado.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="section-tag">Como atuamos</div>
+          <h2>Um ciclo de cuidado que salva vidas.</h2>
+          <div class="process-grid" style="margin-top: 30px;">
+            <article class="process-item">
+              <h3>1. Identificação</h3>
+              <p>Recebemos alertas da comunidade e avaliamos a urgência do caso.</p>
+            </article>
+            <article class="process-item">
+              <h3>2. Atendimento</h3>
+              <p>Animais são levados para avaliação, tratamento e acolhimento seguro.</p>
+            </article>
+            <article class="process-item">
+              <h3>3. Adoção</h3>
+              <p>Conectamos cada pet a uma família preparada, com orientação e acompanhamento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">ONG Patas &amp; Pegadas • Resgates, acolhimento e conexões humanas para um mundo mais compassivo.</div>
+    </footer>
+  </body>
+</html>

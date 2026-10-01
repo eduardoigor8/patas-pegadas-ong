@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animais | Patas & Pegadas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">🐾</div>
+          <span>Patas &amp; Pegadas</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-menu" id="primary-navigation" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <details class="nav-dropdown">
+            <summary>Conheça</summary>
+            <div class="dropdown-menu">
+              <a href="sobre.html">Sobre</a>
+              <a href="animais.html">Animais</a>
+              <a href="resgate.html">Resgate</a>
+            </div>
+          </details>
+          <a href="adocao.html">Adoção</a>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="resgate.html">Doar</a>
+            <a class="btn btn-primary" href="adocao.html">Quero ajudar</a>
+            <div class="appearance-controls" role="group" aria-label="Aparência">
+              <label class="appearance-control">
+                <span>Tema</span>
+                <select id="theme-choice">
+                  <option value="system">Sistema</option>
+                  <option value="light">Claro</option>
+                  <option value="dark">Escuro</option>
+                </select>
+              </label>
+              <label class="appearance-control">
+                <span>Contraste</span>
+                <select id="contrast-choice">
+                  <option value="system">Sistema</option>
+                  <option value="normal">Padrão</option>
+                  <option value="high">Alto</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="gallery-section">
+        <div class="container">
+          <div class="gallery-header">
+            <div>
+              <div class="section-tag">Animais em destaque</div>
+              <h2>Quem está à espera de um lar?</h2>
+            </div>
+            <div class="gallery-actions" aria-label="Filtros rápidos">
+              <button class="filter-btn active" data-filter="all">Todos</button>
+              <button class="filter-btn" data-filter="cachorro">Cachorros</button>
+              <button class="filter-btn" data-filter="gato">Gatos</button>
+              <button class="filter-btn" data-filter="adulto">Adultos</button>
+              <button class="filter-btn" data-filter="filhote">Filhotes</button>
+            </div>
+          </div>
+
+          <div class="filters-panel">
+            <div class="filter-grid">
+              <div class="field">
+                <label for="tipoAnimal">Tipo</label>
+                <select id="tipoAnimal">
+                  <option value="all">Todos</option>
+                  <option value="cachorro">Cachorro</option>
+                  <option value="gato">Gato</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="idadeAnimal">Idade</label>
+                <select id="idadeAnimal">
+                  <option value="all">Todas</option>
+                  <option value="filhote">Filhote</option>
+                  <option value="adulto">Adulto</option>
+                  <option value="idoso">Idoso</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="porteAnimal">Porte</label>
+                <select id="porteAnimal">
+                  <option value="all">Todos</option>
+                  <option value="pequeno">Pequeno</option>
+                  <option value="medio">Médio</option>
+                  <option value="grande">Grande</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="cidadeAnimal">Cidade</label>
+                <select id="cidadeAnimal">
+                  <option value="all">Todas</option>
+                  <option value="campinas">Campinas</option>
+                  <option value="são-paulo">São Paulo</option>
+                  <option value="santos">Santos</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="buscarAnimal">Buscar</label>
+                <input id="buscarAnimal" type="text" placeholder="Nome ou raça" />
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-grid" id="galleryGrid"></div>
+          <template id="pet-card-template">
+            <article class="pet-card">
+              <img src="" alt="" />
+              <div class="pet-info">
+                <h3 data-pet-name></h3>
+                <div class="pet-meta">
+                  <span class="pet-badge" data-pet-badge></span>
+                  <span data-pet-details></span>
+                </div>
+              </div>
+            </article>
+          </template>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">ONG Patas &amp; Pegadas • Resgates, acolhimento e conexões humanas para um mundo mais compassivo.</div>
+    </footer>
+
+  </body>
+</html>

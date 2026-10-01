@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resgate | Patas & Pegadas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">🐾</div>
+          <span>Patas &amp; Pegadas</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-menu" id="primary-navigation" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <details class="nav-dropdown">
+            <summary>Conheça</summary>
+            <div class="dropdown-menu">
+              <a href="sobre.html">Sobre</a>
+              <a href="animais.html">Animais</a>
+              <a href="resgate.html">Resgate</a>
+            </div>
+          </details>
+          <a href="adocao.html">Adoção</a>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="resgate.html">Doar</a>
+            <a class="btn btn-primary" href="adocao.html">Quero ajudar</a>
+            <div class="appearance-controls" role="group" aria-label="Aparência">
+              <label class="appearance-control">
+                <span>Tema</span>
+                <select id="theme-choice">
+                  <option value="system">Sistema</option>
+                  <option value="light">Claro</option>
+                  <option value="dark">Escuro</option>
+                </select>
+              </label>
+              <label class="appearance-control">
+                <span>Contraste</span>
+                <select id="contrast-choice">
+                  <option value="system">Sistema</option>
+                  <option value="normal">Padrão</option>
+                  <option value="high">Alto</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container grid-2">
+          <div class="hero-copy">
+            <span class="eyebrow">Resgate e cuidado</span>
+            <h1>Quando a cidade precisa de <span class="headline-accent">uma voz.</span></h1>
+            <p class="lead">
+              Nosso trabalho de resgate começa quando uma patinha precisa de socorro. A partir daí, ajudamos a garantir atendimento veterinário, alimentação, acolhimento e a chance de uma vida melhor.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="adocao.html">Ser voluntário</a>
+              <a class="btn btn-secondary" href="index.html">Voltar à home</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="../images/imagem-06.jpg" alt="Animal resgatado sendo cuidado" />
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="section-tag">Como denunciar</div>
+          <h2>Seu alerta salva vidas.</h2>
+          <ul class="process-list">
+            <li>Entre em contato com a ONG e descreva a situação, a localização e o estado do animal.</li>
+            <li>Envie fotos ou vídeos para ajudar na avaliação da urgência e do tipo de cuidado necessário.</li>
+            <li>Quando possível, mantenha o animal em local seguro e sem risco enquanto a equipe chega.</li>
+            <li>Compartilhe o caso com amigos e vizinhos para ampliar a rede de cuidado e apoio.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="container">
+          <div class="section-tag">Atendimento</div>
+          <h2>Dados de apoio e mobilização.</h2>
+          <div class="contact-grid" style="margin-top: 28px;">
+            <article class="contact-card">
+              <h3>Atendimento emergencial</h3>
+              <p>Disponível para casos urgentes de abandono, acidentes e animais feridos.</p>
+            </article>
+            <article class="contact-card">
+              <h3>Contato</h3>
+              <p>(11) 3000-9000<br />resgate@pataspegadas.org</p>
+            </article>
+            <article class="contact-card">
+              <h3>Voluntariado</h3>
+              <p>Precisamos de pessoas para transporte, alimentação, limpeza e acompanhamento.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">ONG Patas &amp; Pegadas • Resgates, acolhimento e conexões humanas para um mundo mais compassivo.</div>
+    </footer>
+  </body>
+</html>

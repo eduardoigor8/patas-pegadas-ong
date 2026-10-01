@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adoção | Patas & Pegadas</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../js/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html">
+          <div class="brand-mark">🐾</div>
+          <span>Patas &amp; Pegadas</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+
+        <nav class="nav-menu" id="primary-navigation" aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <details class="nav-dropdown">
+            <summary>Conheça</summary>
+            <div class="dropdown-menu">
+              <a href="sobre.html">Sobre</a>
+              <a href="animais.html">Animais</a>
+              <a href="resgate.html">Resgate</a>
+            </div>
+          </details>
+          <a href="adocao.html">Adoção</a>
+          <div class="nav-actions">
+            <a class="btn btn-secondary" href="resgate.html">Doar</a>
+            <a class="btn btn-primary" href="adocao.html">Quero ajudar</a>
+            <div class="appearance-controls" role="group" aria-label="Aparência">
+              <label class="appearance-control">
+                <span>Tema</span>
+                <select id="theme-choice">
+                  <option value="system">Sistema</option>
+                  <option value="light">Claro</option>
+                  <option value="dark">Escuro</option>
+                </select>
+              </label>
+              <label class="appearance-control">
+                <span>Contraste</span>
+                <select id="contrast-choice">
+                  <option value="system">Sistema</option>
+                  <option value="normal">Padrão</option>
+                  <option value="high">Alto</option>
+                </select>
+              </label>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-section">
+        <div class="container adoption-wrap">
+          <div class="adoption-copy">
+            <img src="../images/imagem-07.jpg" alt="Pessoa segurando cachorro" />
+            <div class="overlay">
+              <div class="section-tag" style="color:#fff;">Adoção responsável</div>
+              <h3>Um lar, uma rotina, um futuro inteiro.</h3>
+              <p>
+                Queremos garantir que cada adoção seja um passo consciente, seguro e cheio de afeto. Nossos tutores passam por orientação e acompanhamento antes, durante e depois da chegada.
+              </p>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="section-tag">Formulário de interesse</div>
+            <h2 style="margin-top: 12px;">Quero adotar</h2>
+            <div class="alert-box alert-box--info form-alert-info" role="note">
+              Preencha os campos obrigatórios para concluir a validação do seu interesse em adoção.
+            </div>
+            <div class="alert-box alert-box--error form-alert" id="form-feedback" role="alert" hidden></div>
+            <form class="adoption-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="nome">Nome completo</label>
+                  <input id="nome" type="text" placeholder="Seu nome" required />
+                </div>
+
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input id="email" type="email" placeholder="seu@email.com" required />
+                </div>
+
+                <div class="field">
+                  <label for="telefone">Telefone</label>
+                  <input id="telefone" type="tel" placeholder="(11) 99999-9999" pattern="(?:\+?55\s?)?\(?\d{2}\)?\s?9?\d{4}-?\d{4}" title="Use DDD e número, por exemplo (11) 99999-9999." />
+                </div>
+
+                <div class="field">
+                  <label for="animalPreferido">Animal preferido</label>
+                  <select id="animalPreferido" required>
+                    <option value="">Selecione</option>
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                    <option>Indiferente</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="mensagem">Conte um pouco sobre seu lar</label>
+                  <textarea id="mensagem" placeholder="Descreva seu espaço, rotina e o tipo de companhia que busca."></textarea>
+                </div>
+
+                <div class="field full">
+                  <label class="checkbox-row">
+                    <input id="aceitoContato" type="checkbox" required />
+                    Aceito receber contato da ONG e receber orientações sobre adoção responsável.
+                  </label>
+                </div>
+              </div>
+
+              <div style="margin-top: 22px;">
+                <button class="btn btn-primary" type="submit">Enviar formulário</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="toast" id="form-toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+        <p>Validação concluída. O formulário está preenchido corretamente.</p>
+        <button class="toast-close" type="button" aria-label="Fechar aviso">Fechar</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">ONG Patas &amp; Pegadas • Resgates, acolhimento e conexões humanas para um mundo mais compassivo.</div>
+    </footer>
+  </body>
+</html>
